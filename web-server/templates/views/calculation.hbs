@@ -1,28 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/css/style.css">
-
 </head>
-
 <body>
-    {{>header}}
-    <h3>{{name}}</h3>
-    {{!-- <form>
-        <input placeholder="Search">
-        <button>Search</button>
-
-        <p id="error-message"></p>
-        <p id="success-message"></p>
-        <p id="location"></p>
-        <p id="forecast"></p>
-
-    </form> --}}
-
+    <h1>Performing: {{> calculation}}</h1>
     <form> 
         <input placeholder="Add/Sub/Divide/Multiplication" id="operation">
         <input placeholder="First Value" id="firstValue">
@@ -31,10 +15,6 @@
 
         <p id="total"></p>
     </form>
-    <footer>{{>footer}}</footer>
     
-    <script src="/js/calculation.js"></script>
-
-</body>
-
+    </body>
 </html>
