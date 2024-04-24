@@ -12,7 +12,7 @@
 <body>
     {{>header}}
     <h3>{{name}}</h3>
-    {{!-- <form>
+    <form>
         <input placeholder="Search">
         <button>Search</button>
 
@@ -21,19 +21,11 @@
         <p id="location"></p>
         <p id="forecast"></p>
 
-    </form> --}}
-
-    <form> 
-        <input placeholder="Add/Sub/Divide/Multiplication" id="operation">
-        <input placeholder="First Value" id="firstValue">
-        <input placeholder="Second Value" id="secondValue">
-        <button>Submit</button>
-
-        <p id="total"></p>
     </form>
+
     <footer>{{>footer}}</footer>
     
-    <script src="/js/calculation.js"></script>
+    <script src="/js/app.js"></script>
 
 </body>
 

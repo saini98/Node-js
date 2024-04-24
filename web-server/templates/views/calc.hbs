@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    {{!-- <h1>Performing: {{> calculation}}</h1> --}}
+    <form>
+        {{!-- <input placeholder="Add/Sub/Divide/Multiplication" id="operation"> --}}
+        <select name="Calculate" id="operation">
+            <option value="select">Select</option>
+            <option value="add">Add</option>
+            <option value="subtract">Subtract</option>
+            <option value="divide">Divide</option>
+            <option value="multiplication">Multiplication</option>
+        </select>
+        <input placeholder="First Value" id="firstValue">
+        <input placeholder="Second Value" id="secondValue">
+        <button>Submit</button>
+
+        <p id="total"></p>
+    </form>
+    <script src="/js/calculations.js"></script>
+
+</body>
+
+</html>

@@ -109,13 +109,30 @@ app.get('/calculation', (req, res) => {
         })
     } 
     else {
-        calculator(req.query.firstValue, req.query.secondValue, req.query.calculate)
-        res.send({
-            firstValue: (JSON.parse(req.query.firstValue) * JSON.parse(req.query.secondValue)),
-            secondValue: req.query.secondValue,
-            calculate: req.query.calculate
+        calculator(+req.query.firstValue, +req.query.secondValue, req.query.calculate, (error, response) => {
+            console.log(response)
+
+            if(error) {
+                return res.send({
+                    error
+                })
+            }
+
+            res.send({
+                // firstValue: (JSON.parse(req.query.firstValue) * JSON.parse(req.query.secondValue)),
+                // secondValue: req.query.secondValue,
+                // calculate: req.query.calculate
+                response
+            })
         })
+        
     }
+});
+
+app.get('/calc', (req, res) => {
+    res.render('calc', {
+        title: 'Calculator'
+    })
 })
 
 app.get('/help/*', (req, res) => {

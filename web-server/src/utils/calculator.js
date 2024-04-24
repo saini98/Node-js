@@ -1,16 +1,16 @@
-const calculator = (firstValue, secondValue, calculate) => {
-
+const calculator = (firstValue, secondValue, calculate, callback) => {
+      console.log('calculate',calculate);
     if (calculate === "add") {
-        console.log(firstValue + secondValue)
-        return firstValue + secondValue;
+        console.log(`Sum is ${firstValue + secondValue}`)
+        callback(undefined, `Sum of ${firstValue} and ${secondValue} is :  ${firstValue + secondValue}`);
     } else if(calculate === "subtract") {
-        return firstValue - secondValue;
+        callback(undefined, `Subtraction of ${firstValue} and ${secondValue} is :  ${firstValue - secondValue}`);
     } else if (calculate === "divide") {
-        return firstValue/secondValue;
+        callback(undefined, `Division of ${firstValue} and ${secondValue} is :  ${firstValue/secondValue}`);
     } else if(calculate === "multiplication") {
-        return firstValue*secondValue;
+        callback(undefined, `Multiplication of ${firstValue} and ${secondValue} is :  ${firstValue*secondValue}`);
     } else {
-        return `Cant'calculate ${calculate}`
+        callback(`Cant'calculate ${calculate}`)
     }
 }
 
