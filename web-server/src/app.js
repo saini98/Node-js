@@ -94,7 +94,7 @@ app.get('/product', (req, res) => {
     })
 });
 
-app.get('/calculation', (req, res) => {
+app.post('/calculation', (req, res) => {
     if(!req.query.firstValue) {
         return res.send({
             error: "Please provide first value"
