@@ -19,9 +19,9 @@ async function main() {
     const collection = db.collection('owner');
 
     // the following code examples can be pasted here...
-    db.collection('owner').insertOne({
+         db.collection('user').insertOne({
         _id: id,
-        'name': 'Sahil Saini',
+        'name': 'Sahil',
         'age': '26'
     }, (error, result) => {
         if(error) {
@@ -62,7 +62,7 @@ async function main() {
     // console.log('Inserted documents =>', insertResult);
 
 
-    return 'done.';
+   
 }
 
 main()
