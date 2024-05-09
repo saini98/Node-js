@@ -1,0 +1,27 @@
+[
+    {
+        "name": "Maruti",
+        "Model": "Fronx",
+        "color": "Black"
+    },
+    {
+        "name": "Maruti",
+        "Model": "Xl6",
+        "color": "Blue"
+    },
+    {
+        "name": "Tata",
+        "Model": "Harrier",
+        "color": "Black"
+    },
+    {
+        "name": "Hyundai",
+        "Model": "Creta",
+        "color": "White"
+    },
+    {
+        "name": "Ford",
+        "Model": "Eco-sport",
+        "color": "Orange"
+    }
+]
